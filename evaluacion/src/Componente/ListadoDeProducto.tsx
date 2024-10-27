@@ -1,4 +1,5 @@
 import { ListaDeProductos } from "../Modelo/ListaProducto"
+import { Producto } from "../Modelo/Producto";
 import { TarjetaProducto } from "./TarjetProducto";
 
  type ListadoP ={
@@ -7,7 +8,7 @@ import { TarjetaProducto } from "./TarjetProducto";
 
 const ListadoDeProducto : React.FC<ListadoP > = ({Productos})=>{
 
-  const productos = Productos;
+    const productos = Productos;
 
 /*
  <div class="container text-center">

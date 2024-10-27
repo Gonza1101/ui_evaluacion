@@ -3,15 +3,16 @@ import './App.css'
 import ListadoDeProducto from './Componente/ListadoDeProducto'
 
 import { Productos} from './Modelo/ProductosListaDo'
+import { useState } from 'react'
 
 function App() {
 
-   const productos = Productos
+  const [productos,setProductos]= useState(Productos)
 
   return (
     <>
       <BarraDeMenu/>
-      <ListadoDeProducto Productos={productos} />
+      <ListadoDeProducto Productos={productos}/>
     </>
   )
 }
